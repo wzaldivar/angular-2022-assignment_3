@@ -1,0 +1,15 @@
+<button
+  class="btn btn-primary"
+  (click)=onToggleSpecialOrder()
+>
+  Display Details
+</button>
+<p
+  class="text-info"
+  *ngIf="showSpecialOrder"
+>
+  Special Order 937: "Priority one — Ensure return of organism for analysis.
+  All other considerations secondary. Crew expendable."
+</p>
+
+<p *ngFor="let buttonClick of buttonClicks" [ngClass]="getClass(buttonClick)" [ngStyle]="{backgroundColor: getColor(buttonClick)}">Click number {{ buttonClick }}</p>
