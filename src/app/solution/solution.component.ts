@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SolutionComponent implements OnInit {
   showSpecialOrder = false;
   counter = 0;
-  buttonClicks = [];
+  buttonClicks: number[] = [];
 
   constructor() { }
 
@@ -26,6 +26,6 @@ export class SolutionComponent implements OnInit {
   }
 
   getColor(value: number) {
-    return value >= 5 ? 'blue' : 'none';
+    return value >= 5 ? 'blue' : 'transparent';
   }
 }
